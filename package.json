@@ -1,0 +1,54 @@
+{
+  "name": "ai-visibility-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that checks whether AI assistants (ChatGPT, Claude, Perplexity, Gemini) recommend a business.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Frankie Claridge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d1fpc3/ai-visibility-mcp.git"
+  },
+  "homepage": "https://github.com/d1fpc3/ai-visibility-mcp#readme",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "geo",
+    "ai-search",
+    "local-seo",
+    "llm"
+  ],
+  "bin": {
+    "ai-visibility-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "vitest run",
+    "smoke": "node scripts/smoke.mjs",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build && npm run smoke"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.15",
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}
