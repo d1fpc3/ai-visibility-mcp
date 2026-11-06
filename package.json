@@ -4,7 +4,7 @@
   "description": "MCP server that checks whether AI assistants (ChatGPT, Claude, Perplexity, Gemini) recommend a business.",
   "type": "module",
   "license": "MIT",
-  "author": "Frankie Claridge",
+  "author": "Frank Claridge",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/d1fpc3/ai-visibility-mcp.git"
