@@ -164,6 +164,6 @@ for local businesses, explains why a business was left out, and writes the fixes
 
 ## Author
 
-Built by Frankie Claridge ([github.com/d1fpc3](https://github.com/d1fpc3)).
+Built by Frank Claridge ([github.com/d1fpc3](https://github.com/d1fpc3)).
 
 MIT licensed.
